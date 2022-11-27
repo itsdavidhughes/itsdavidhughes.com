@@ -19,27 +19,117 @@
     padding: 0;
   }
 
+
+
   body{
-    padding: 10rem;
+
     font-size: 1rem;
     font-family: 'Inter', sans-serif;
+    border-top: 16px solid #D76F37;
   }
+
+
+  #container{
+    width: 100%;
+  
     
+  }
+
+  #main{
+
+  }
+
+  .slice{
+    border-bottom: 1px solid #e1e1e1;
+    padding-top: 12.5em;
+    padding-bottom: 12.5em;
+    margin-bottom: 3rem;
+  }
+
+  .content{
+max-width: 1035px;
+margin: 0 auto;
+
+
+
+}
+
+.grid{
+display:grid;
+}
+
+
+
+.work{
+  grid-template-columns: 50% 50%;
+}
+
+.info{
+  grid-column: 1 / 2;
+}
+
+.desc{
+  padding: 2rem;
+  grid-column: 2 / 4;
+}
+
+
+#intro p{
+  font-size: 2rem;
+  line-height: 2.375rem;
+  color: #232323;
+  letter-spacing: -0.04rem;
+  max-width: 812px;
+}
+   
     h1{
      
       font-size: 3rem;
-
+      letter-spacing: -0.04em;
+      font-weight: 600;
       -webkit-font-smoothing: antialiased;
+      margin-bottom: 3rem;
     
     }
 
+    h2{
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.04em;
+    }
+
+    .work span{
+
+      font-size: 1.125rem;
+      font-weight: 600;
+      letter-spacing: -0.04em;
+      color: #232323;
+      display:block;
+
+
+    }
+
+    .jobtitle{
+      opacity: 0.5;
+    }
+
+    .dates{}
+
+    .work p{
+      font-size: 1.125rem;
+      font-weight: 500;
+      line-height: 1.688rem;
+      letter-spacing: -0.04em;
+      color: #232323;
+    }
+
     p{
-      max-width: 35rem;
+      
       font-size: 1.2rem;
       margin-bottom: 1.618rem;
       line-height: 1.5;
       color: #1d1d1d;
-     -webkit-font-smoothing: antialiased;
+    /* -webkit-font-smoothing: antialiased;*/
 
 
     }
@@ -47,6 +137,8 @@
     .intro{
       font-size: 1.6rem;
     }
+
+  
 
     a{
       text-decoration: none;
@@ -63,99 +155,259 @@
    
     }
 
+    .visuals{
 
-    @media only screen and (max-width: 800px){
-      body{
-        padding: 3rem;
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      margin-top: 2rem;
 
+ 
 
-
-      }
-
-      h1{
     
-      }
+    }
+
+    .visuals img{
+ 
+      flex: 0 0 auto;
+      margin-right: 1rem;
+      max-height: 520px;
+
+    }
+
+
+    @media screen and (max-width: 800px){
+
+      body{
       
+    
+    }
 
-      p{
+    #intro{
+      padding: 2rem;
+      font-size: 60%;
+    }
+
+    .slice{
+      padding-top: 3.125rem;
+      padding-bottom: 3.125rem;
+      margin-bottom: 1rem;
+    }
+
+    h1{
+      font-size: 2rem;
+    }
+
+  #intro p{
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+
+   
+
   
-      }
+    .info, .desc{
+      padding: 2rem;
+      grid-column: 1 / 4;
+}
+
+
 
     }
 
 
 
-    @media only screen and (max-width: 500px){
+ 
 
-      body{
-        padding: 3rem;
-      }
-     
-    }
-
-    @media only screen and (max-width: 450px){
-
-      body{
-        padding: 2rem;
-      }
-
-      h1{
-        
-      }
-
-      p{
-        
-      }
-
-      .intro{
-
-      }
-
-    }
 
   </style>
-  <body> 
-    <h1>David Hughes</h1>
-    <p class="intro">I’ve been working in digital product design delivering results for 15 years. </p>
-
-    <h2>Education</h2>
-    <h3>2005-2009</h3>
-
-    <p>I graduated with 1st class honours in Interactive Multimedia Design (2009) from the University of Ulster. It was an interesting blend of design and technology—with a sandwich year working in indiustry. </p>
-
-    <h2>AV Browne</h2>
-    <h3>Designer • 2007-2009</h3>
-    <p>After my placement year working as an intern, I spent another year here full time designing websites and  digital marketing material (emails, banners etc) for clients such as Ulsterbank, Aer Lingus, Boylesports and Jameson Whiskey.</p>
-
-    <h2>Front</h2>
-    <h3>Designer • 2009-2012</h3>
-    <p>Working as a Designer at respected design, strategy and technology studio, Front—I was fortunate enough to contribute to the design and UX of successful projects for a number of clients including the Abbey Theatre, Leckey and Carte Blanche Greetings. </p>
-
-    <h2>Typecast</h2>
-    <h3>Product Designer • 2010-2012</h3>
-    <p>During my time at Front I was also a key member of the design team behind Typecast; a browser based design tool that helped designers make better typographic decisions. In addition to being part of the team that built the Typecast product itself, I also learned how important community was to launching a product.</p> 
-    
-    <p>Typecast was used by over one million people and was acquired by Monotype in late 2012. My day to day role at Typecast was usually a blend of wireframing, interaction design, visual design, design research and usability testing. </p>
-
-    <h2>Monotype</h2>
-    <h3>Product Designer -> Product Manager • 2012-2017</h3>
-    <p>After joining Monotype as a designer in 2012, I worked on various projects that helped Monotype experiment with new paradigms and business models. In 2013, I led the UX and Design of a brand new product category; a cloud based font subscription service for large agencies and publishers which gave them freedom and flexibility to try an unlimited number of typefaces from the Monotype Library for a fixed annual fee. This product evolved into the Monotype Library Subscription. </p>
-
-    <p>I spent the last 18 months of my time at Monotype working as a Product Manager in charge of Monotype's Enterprise products ($40m+ business unit). I spent most of my time talking to customers and working with a cross functional team to invent ways to simplify Monotype's offering for this segment of the market. </p>
-    <p>Before leaving Monotype in April 2017, I was responsible for the launch of a new license type. Aimed at Global 2000 brands, this product was designed to reduce complexity and headaches that come with using fonts in a global brand identity — whilst enabling brands to achieve the consistency they need across every device or touchpoint they create.</p>
-
-    <h2>Rotor</h2>
-    <h3>Product Design Lead -> Head of Product • 2018-Current</h3>
-    <p>At Rotor, we create video creation tools for the music industry. We believe video creation should be easy, fast and affordable.  </p>
-    
-    <p>After joining as lead product designer — we started to get a bit of traction. I led initiatives to start measuring customer satisfaction and quickly identified numerous high impact improvements.</p>
+  <body>
+    <div id="main"> 
    
-    <p>Shortly thereafter I was promoted to Head of Product. From there, I was responsible for defining what we worked on, when and why. 
+        <section class="slice" id="intro">
+          <div class="content">
+          <h1>I’ve been working in digital product design delivering results for 15 years.</h1>
+          <p>I’m comfortable in small, scrappy teams where you wear many hats—and in larger cross functional environments.</p>
+          <p>For the past 4 years I've been working in music tech, building products for Artists & Labels at Rotor. </p>
+        </div>
+
+        </section>
+
+      <section class="slice" id="rotor"> 
+        <div class="content work grid">
+
+          <div class="info">
+
+            <h2>Rotor</h2>
+            <span class="jobtitle">Product Design Lead -> Head of Product </span>
+            <span class="dates">2018-Current</span>
+
+          </div>
+
+          <div class="desc">
+
+            <p>At Rotor, we create video creation tools for the music industry. We believe video creation should be easy, fast and affordable.  </p>
+            
+            <p>After joining as lead product designer — we started to get a bit of traction. I led initiatives to start measuring customer satisfaction and quickly identified numerous high impact improvements.</p>
+          
+            <p>Shortly thereafter I was promoted to Head of Product. From there, I was responsible for defining what we worked on, when and why. 
+              
+            <p>I built a small design team from scratch as we expanded our product offering, including some first in category products. Our revenue started to grow. </p>
+
+            <p>I helped transform and diversify our business model setting the business up to capture new, higher value segments of the market—offering services beyond video creation. </p>
+
+          </div>
+        </div>
+
+        <div class="visuals">
+
+          <img src="rotor-range-mobile.jpg"/>
+          <img src="rotor-range.jpg"/>
+          <img src="rotor-filters.jpg"/>
+          <img src="rotor-filters-mobile.jpg"/>
+          <img src="rotor-canvas-creator.jpg"/>
+          <img src="rotor-spotify-canvas.jpg"/>
+
+          <img src="https://via.placeholder.com/1040x520"/>
+          <img src="https://via.placeholder.com/520x520"/>
+          <img src="https://via.placeholder.com/520x520"/>
+
+
+        </div>
       
-    <p>I built a small design team from scratch as we expanded our product offering, including some first in category products. Our revenue started to grow. </p>
+      </section>
 
-    <p>I helped transform and diversify our business model (more than once) setting the business up to capture new, higher value segments of the market—offering services beyond video creation. </p>
+      <section class="slice" id="monotype"> 
+        <div class="content work grid">
 
+          <div class="info">
+
+            <h2>Monotype</h2>
+            <span class="jobtitle">Product Designer -> Product Manager </span>
+            <span class="dates">2012-2017</span>
+
+          </div>
+
+          <div class="desc">
+
+            <p>After joining Monotype as a designer in 2012, I worked on various projects that helped Monotype experiment with new paradigms and business models. In 2013, I led the UX and Design of a brand new product category; a cloud based font subscription service for large agencies and publishers which gave them freedom and flexibility to try an unlimited number of typefaces from the Monotype Library for a fixed annual fee. This product evolved into the Monotype Library Subscription. </p>
+
+            <p>I spent the last 18 months of my time at Monotype working as a Product Manager in charge of Monotype's Enterprise products ($40m+ business unit). I spent most of my time talking to customers and working with a cross functional team to invent ways to simplify Monotype's offering for this segment of the market. </p>
+            
+            <p>Before leaving Monotype in April 2017, I was responsible for the launch of a new license type. Aimed at Global 2000 brands, this product was designed to reduce complexity and headaches that come with using fonts in a global brand identity — whilst enabling brands to achieve the consistency they need across every device or touchpoint they create.</p>
+          </div>
+        </div>
+
+        <div class="visuals">
+
+          <img src="https://via.placeholder.com/520x520"/>
+          <img src="https://via.placeholder.com/1040x520"/>
+          <img src="https://via.placeholder.com/520x520"/>
+          <img src="https://via.placeholder.com/1040x520"/>
+          <img src="https://via.placeholder.com/520x520"/>
+          <img src="https://via.placeholder.com/520x520"/>
+
+          <img src="https://via.placeholder.com/1040x520"/>
+          <img src="https://via.placeholder.com/520x520"/>
+          <img src="https://via.placeholder.com/520x520"/>
+
+
+        </div>
+      
+      </section>
+
+      <section class="slice" id="typecast"> 
+        <div class="content work grid">
+
+          <div class="info">
+
+            <h2>Typecast</h2>
+            <span class="jobtitle">Product Designer</span>
+            <span class="dates">2010-2012</span>
+        
+  
+          </div>
+          <div class="desc">
+            <p>During my time at Front I was also a key member of the design team behind Typecast; a browser based design tool that helped designers make better typographic decisions. In addition to being part of the team that built the Typecast product itself, I also learned how important community was to launching a product.</p> 
+          
+            <p>Typecast was used by over one million people and was acquired by Monotype in late 2012. My day to day role at Typecast was usually a blend of wireframing, interaction design, visual design, design research and usability testing. </p>
+        
+          </div>
+        </div>
+
+        <div class="visuals">
+
+          <img src="https://via.placeholder.com/520x520"/>
+          <img src="https://via.placeholder.com/1040x520"/>
+          <img src="https://via.placeholder.com/520x520"/>
+          <img src="https://via.placeholder.com/1040x520"/>
+          <img src="https://via.placeholder.com/520x520"/>
+          <img src="https://via.placeholder.com/520x520"/>
+
+          <img src="https://via.placeholder.com/1040x520"/>
+          <img src="https://via.placeholder.com/520x520"/>
+          <img src="https://via.placeholder.com/520x520"/>
+
+
+        </div>
+      
+      </section>
+
+
+      <section class="slice" id="guessi"> 
+        <div class="content work grid">
+
+          <div class="info">
+
+            <h2>Guessi</h2>
+            <span class="jobtitle">Co-Creator, Product Designer</span>
+            <span class="dates">2012-Current</span>
+        
+  
+          </div>
+          <div class="desc">
+            <p>In 2012 some friends and I invented a mobile game for the World Cup. We enjoyed it so much we now do it for every major soccer tournament. People tell us they like it, so that's nice. </p>
+          </div>
+        </div>
+
+        <div class="visuals">
+
+          <img src="https://via.placeholder.com/520x520"/>
+          <img src="https://via.placeholder.com/1040x520"/>
+          <img src="https://via.placeholder.com/520x520"/>
+          <img src="https://via.placeholder.com/1040x520"/>
+          <img src="https://via.placeholder.com/520x520"/>
+          <img src="https://via.placeholder.com/520x520"/>
+
+          <img src="https://via.placeholder.com/1040x520"/>
+          <img src="https://via.placeholder.com/520x520"/>
+          <img src="https://via.placeholder.com/520x520"/>
+
+
+        </div>
+      
+      </section>
+
+        
+        
+
+        <h2>Education</h2>
+        <h3>2005-2009</h3>
+
+        <p>I graduated with 1st class honours in Interactive Multimedia Design (2009) from the University of Ulster. It was an interesting blend of design and technology—with a sandwich year working in indiustry. </p>
+
+        <h2>AV Browne</h2>
+        <h3>Designer • 2007-2009</h3>
+        <p>After my placement year working as an intern, I spent another year here full time designing websites and  digital marketing material (emails, banners etc) for clients such as Ulsterbank, Aer Lingus, Boylesports and Jameson Whiskey.</p>
+
+        <h2>Front</h2>
+        <h3>Designer • 2009-2012</h3>
+        <p>Working as a Designer at respected design, strategy and technology studio, Front—I was fortunate enough to contribute to the design and UX of successful projects for a number of clients including the Abbey Theatre, Leckey and Carte Blanche Greetings. </p>
+
+    
+  </div><!--/main-->
+    
     
   </body>
 </html>
