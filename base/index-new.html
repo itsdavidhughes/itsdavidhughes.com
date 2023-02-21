@@ -7,20 +7,21 @@
 
 <script type="text/javascript">
 const bgArray = new Array();
-	bgArray[0] = '0';
-	bgArray[1] = '1';
-	bgArray[2] = '2';
-	bgArray[3] = '3';
-	bgArray[4] = '4';
-	bgArray[5] = '5';
-	bgArray[6] = '6';
+bgArray[0] = "0";
+bgArray[1] = "1";
+bgArray[2] = "2";
+bgArray[3] = "3";
+bgArray[4] = "4";
+bgArray[5] = "5";
+bgArray[6] = "6";
+bgArray[7] = "7";
+bgArray[8] = "8";
 
-	
-	const url = 'https://itsdavidhughes.com/base/'
-	let i = 0
-	let l = bgArray.length;
-	
-	function it() {
+const url = "https://itsdavidhughes.com/base/";
+let i = 0;
+let l = bgArray.length;
+
+function it() {
 	$(".bg").css("background-image", "url(" + url + bgArray[i] + ".gif)");
 
 	if (++i <= l) {
