@@ -21,13 +21,18 @@ const bgArray = new Array();
 	let l = bgArray.length;
 	
 	function it() {
-		$('.bg').css('background-image', 'url(' + url + bgArray[i] + '.gif)');
-		
-		if(++i<=l) { setTimeout(it, 2000); }
-		if(i == l) { i = 0; }
-	};
-	
-	it();
+	$(".bg").css("background-image", "url(" + url + bgArray[i] + ".gif)");
+
+	if (++i <= l) {
+		setTimeout(it, 2000);
+	}
+	if (i == l) {
+		i = 0;
+	}
+}
+
+it();
+
 	</script>
 <style>
 
